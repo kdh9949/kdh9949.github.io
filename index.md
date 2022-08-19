@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+Profile picture (todo)
 
-You can use the [editor on GitHub](https://github.com/kdh9949/kdh9949.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+E-mail : donghyeon9949 at gmail
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[GitHub](https://github.com/kdh9949) / [Tistory Blog](https://kdh9949.tistory.com)
 
-### Markdown
+CV (todo)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## About Me
 
-```markdown
-Syntax highlighted code block
+I'm an undergraudate student at Seoul National University (SNU) in the Department of Computer Science and Engineering.
 
-# Header 1
-## Header 2
-### Header 3
+I'm highly interested and experienced in Problem Solving for over 10 years.
 
-- Bulleted
-- List
+[Baekjoon Online Judge](https://acmicpc.net/user/kdh9949) - 3345 Problems solved
 
-1. Numbered
-2. List
+[Codeforces](https://codeforces.com/profile/kdh9949) - Rating <span style="color:red">**2750**</span>(cur) / <span style="color:red">**2881**</span>(max)
 
-**Bold** and _Italic_ and `Code` text
+[Atcoder](https://atcoder.jp/users/kdh9949) - Rating <span style="color:orange">**2610**</span>(cur) / <span style="color:orange">**2638**</span>(max)
 
-[Link](url) and ![Image](src)
-```
+## Awards
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+www
 
-### Jekyll Themes
+## Experiences
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kdh9949/kdh9949.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+www
