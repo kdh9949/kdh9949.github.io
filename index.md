@@ -18,7 +18,7 @@ I'm highly interested and experienced in Problem Solving for over 10 years.
 
 ## Awards
 
-Internationl contests are marked bold.
+International contests are marked bold.
 
 * Silver Prize (3th Place), ICPC Seoul Regional Contest, 2022 - Team Contest (*HappyLastDance*)
 * Silver Prize (4th Place), ICPC Seoul Regional Contest, 2020 - Team Contest (*One Coin*)
