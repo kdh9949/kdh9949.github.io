@@ -14,11 +14,7 @@ I'm highly interested and experienced in Problem Solving for over 10 years.
 
 [IOI Information](https://stats.ioinformatics.org/people/6332) - Participated in IOI 2017
 
-[Baekjoon Online Judge](https://acmicpc.net/user/kdh9949) - 3614 Problems solved
-
-[Codeforces](https://codeforces.com/profile/kdh9949) - Rating <span style="color:red">**2768**</span>(cur) / <span style="color:red">**2881**</span>(max)
-
-[Atcoder](https://atcoder.jp/users/kdh9949) - Rating <span style="color:orange">**2665**</span>(cur) / <span style="color:orange">**2667**</span>(max)
+{% include judge_profile.html boj_id="kdh9949" codeforces_id="kdh9949" atcoder_id="kdh9949" %}
 
 ## Awards
 
