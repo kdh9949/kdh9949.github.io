@@ -1,0 +1,24 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.you-column, .ai-column {
+  width: 25%;
+}
+
+.special-row {
+  background-color: aliceblue;
+}
+
+#score-table table, th, td {
+  border: black 1px solid;
+  text-align: center;
+}
+
+#score-table .not-used {
+  color: gray;
+}
+
+#score-table .not-used:hover {
+  background-color: aquamarine;
+}

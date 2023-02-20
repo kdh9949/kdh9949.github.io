@@ -1,8 +1,29 @@
 <html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="yacht/style.css">
     <body>
-        <h1>Play Yacht dice against AI</h1>
-        <p>Coming soon</p>
+        <h1>Play Yacht dice against AI (Coming soon)</h1>
+        <table id="score-table">
+            <tr><th></th><th class="you-column">You</th><th class="ai-column">AI</th></tr>
+            <tr><td>Ones</td><td></td><td></td></tr>
+            <tr><td>Twos</td><td></td><td></td></tr>
+            <tr><td>Threes</td><td></td><td></td></tr>
+            <tr><td>Fours</td><td></td><td></td></tr>
+            <tr><td>Fives</td><td></td><td></td></tr>
+            <tr><td>Sixes</td><td></td><td></td></tr>
+            <tr class="special-row"><td>Bonus</td><td></td><td></td></tr>
+            <tr><td>Choice</td><td></td><td></td></tr>
+            <tr><td>Four cards</td><td></td><td></td></tr>
+            <tr><td>Full house</td><td></td><td></td></tr>
+            <tr><td>Small straight</td><td></td><td></td></tr>
+            <tr><td>Large straight</td><td></td><td></td></tr>
+            <tr><td>Yacht</td><td></td><td></td></tr>
+            <tr class="special-row"><td>Total</td><td></td><td></td></tr>
+        </table>
+        <div id="test-div"></div>
         <button id="test-button">Press me!</button>
     </body>
-    <script src="yacht/main.js" defer></script>
+    <script type="module" src="yacht/main.js"></script>
 </html>
