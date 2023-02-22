@@ -5,14 +5,16 @@ const eyes = (eye) => (dices) => eye * dices.filter(x => x === eye).length
 const choice = (dices) => sum(dices)
 
 const four_cards = (dices) => {
-  dices.sort()
-  return (dices[0] === dices[3] || dices[1] === dices[4]) ? sum(dices) : 0
+  let sorted = [...dices]
+  sorted.sort()
+  return (sorted[0] === sorted[3] || sorted[1] === sorted[4]) ? sum(dices) : 0
 }
 
 const full_house = (dices) => {
-  dices.sort()
-  return (dices[0] === dices[1] && dices[2] === dices[4]) ? sum(dices) :
-         (dices[0] === dices[2] && dices[3] === dices[4]) ? sum(dices) : 0
+  let sorted = [...dices]
+  sorted.sort()
+  return (sorted[0] === sorted[1] && sorted[2] === sorted[4]) ? sum(dices) :
+         (sorted[0] === sorted[2] && sorted[3] === sorted[4]) ? sum(dices) : 0
 }
 
 const small_straight = (dices) => {
@@ -24,11 +26,12 @@ const small_straight = (dices) => {
 }
 
 const large_straight = (dices) => {
-  dices.sort()
-  return (dices[0] + 1 === dices[1] &&
-          dices[1] + 1 === dices[2] &&
-          dices[2] + 1 === dices[3] &&
-          dices[3] + 1 === dices[4]) ? 30 : 0
+  let sorted = [...dices]
+  sorted.sort()
+  return (sorted[0] + 1 === sorted[1] &&
+          sorted[1] + 1 === sorted[2] &&
+          sorted[2] + 1 === sorted[3] &&
+          sorted[3] + 1 === sorted[4]) ? 30 : 0
 }
 
 const yacht = (dices) => (dices.filter(x => x == dices[0]).length == 5 ? 50 : 0)

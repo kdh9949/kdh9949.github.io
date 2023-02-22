@@ -1,24 +1,15 @@
-body {
-  font-family: "Open Sans", sans-serif;
-}
+body { font-family: "Noto Sans KR", sans-serif; }
 
-.you-column, .ai-column {
-  width: 25%;
-}
-
-.special-row {
-  background-color: aliceblue;
-}
-
-#score-table table, th, td {
+table, th, td {
   border: black 1px solid;
   text-align: center;
 }
 
-#score-table .not-used {
-  color: gray;
-}
+#score-table .not-used { color: gray; }
+#score-table .not-used:hover { background-color: aquamarine; }
 
-#score-table .not-used:hover {
-  background-color: aquamarine;
-}
+#score-table .you-column, .ai-column { width: 30%; }
+#score-table .special-row { font-weight: bold; background-color: aliceblue; }
+
+#dice-table td { width: 25px; height: 25px; }
+#dice-table .selected { background-color: aquamarine; }

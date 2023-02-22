@@ -26,14 +26,27 @@ export class GameState {
     this.my_scoreboard = new Scoreboard()
     this.ai_scoreboard = new Scoreboard()
     this.my_turn = my_turn
+    this.round = 1
     this.roll_left = 3
     this.dices = [0, 0, 0, 0, 0]
   }
 
-  roll(idx) {
-    idx.forEach((i) => {
-      this.dices[i] = 1 + Math.floor(Math.random() * 6)
-    })
+  make_move(move) {
+    if(move.type === 'roll') {
+      for(let i = 0; i < move.idx.length; ++i) {
+        this.dices[move.idx[i]] = 1 + Math.floor(Math.random() * 6)
+      }
+    }
+    else {
+      if(this.my_turn)
+        this.my_scoreboard.update(move.rule, this.dices)
+      else
+        this.ai_scoreboard.update(move.rule, this.dices)
+      //this.my_turn = !this.my_turn
+      this.round += 1
+      this.roll_left = 3
+      this.dices = [0, 0, 0, 0, 0]
+    }
   }
 
   potential_score(rule) {
