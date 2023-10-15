@@ -1,0 +1,24 @@
+body { font-family: "Noto Sans Korean", sans-serif; }
+
+button {
+  font-size: 400%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#question-panel {
+  width: fit-content;
+  background-color: #eee;
+  margin: auto;
+  font-size: 500%;
+}
+
+#answer-panel {
+  width: fit-content;
+  margin: auto;
+}
+
+#message-panel {
+  width: fit-content;
+  margin: auto;
+}
