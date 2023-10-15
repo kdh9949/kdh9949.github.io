@@ -21,4 +21,5 @@ button {
 #message-panel {
   width: fit-content;
   margin: auto;
+  font-size: 400%;
 }
