@@ -1,4 +1,4 @@
-Profile picture (todo)
+<img src="https://github.com/kdh9949/kdh9949.github.io/assets/17994874/344598dc-a9b8-49e8-91f6-209128e0c83f" width="300"/>
 
 E-mail : donghyeon9949 at gmail / kdh9949 at snu-ac-kr
 
