@@ -24,6 +24,7 @@ I'm highly interested and experienced in Algorithmic Problem Solving for over 10
 
 International contests are marked bold.
 
+* Silver Medal (7th Place), **ICPC World Finals**, 2023 - Team Contest (*HappyLastDance*)
 * Silver Prize (3rd Place), ICPC Seoul Regional Contest, 2022 - Team Contest (*HappyLastDance*)
 * Silver Prize (4th Place), ICPC Seoul Regional Contest, 2020 - Team Contest (*One Coin*)
 * Silver Medal (7th Place), **ICPC World Finals**, 2019 - Team Contest (*789*)
@@ -51,7 +52,7 @@ International contests are marked bold.
 
 ## Experiences
 
-* Backend Engineer @ Moloco, Sep 2023 ~
+* Backend Engineer @ Moloco, Sep 2023 ~ Present
   * Golang / Python / SQL
   * GCP (BigQuery, BigTable, Cloud Run), Apache Pinot
 
