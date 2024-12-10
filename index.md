@@ -8,7 +8,7 @@ CV (todo)
 
 ## About Me
 
-I'm working as a backend engineer at Moloco from Sep 2023.
+I'm working as an NPU Compiler Engineer at FuriosaAI from Dec 2024.
 
 I've graudated from Seoul National University (SNU) with a bachelor's degree, majoring in Computer Science and Engineering.
 
@@ -52,7 +52,10 @@ International contests are marked bold.
 
 ## Experiences
 
-* Backend Engineer @ Moloco, Sep 2023 ~ Present
+* NPU Compiler Engineer @ FuriosaAI, Dec 2024 ~ Present
+  * Rust
+
+* Backend Engineer @ Moloco, Sep 2023 ~ Nov 2024
   * Golang / Python / SQL
   * GCP (BigQuery, BigTable, Cloud Run), Apache Pinot
 
