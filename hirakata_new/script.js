@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardDisplay = document.getElementById('card-display');
     const userInput = document.getElementById('user-input');
     const submitBtn = document.getElementById('submit-btn');
+    const skipBtn = document.getElementById('skip-btn'); // New: Skip button
     const feedback = document.getElementById('feedback');
     const meaning = document.getElementById('meaning');
     const progressBar = document.getElementById('progress-bar');
@@ -15,13 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentKeys = [];
     let currentIndex = 0;
     let mode = 'hiragana'; // hiragana, katakana, hiraganaKatakanaWords, or kanji
+    let incorrectAttempts = 0; // New: Track incorrect attempts
 
     function initialize(newMode) {
         mode = newMode;
         meaning.textContent = '';
         feedback.textContent = '';
         userInput.value = '';
-
+        incorrectAttempts = 0; // Reset attempts on mode change
+        skipBtn.style.display = 'none'; // Hide skip button
+        
         if (mode === 'hiragana') {
             currentData = hiragana;
         } else if (mode === 'katakana') {
@@ -49,9 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateFlashcard() {
         if (currentIndex < currentKeys.length) {
             cardDisplay.textContent = currentKeys[currentIndex];
+            incorrectAttempts = 0; // Reset attempts for new card
+            skipBtn.style.display = 'none'; // Hide skip button for new card
         } else {
             cardDisplay.textContent = '🎉';
             feedback.textContent = 'All done!';
+            skipBtn.style.display = 'none'; // Hide skip button when all done
         }
     }
 
@@ -68,11 +75,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (userInput.value.toLowerCase() === correctAnswer) {
             feedback.textContent = 'Correct!';
             feedback.className = 'correct';
+            incorrectAttempts = 0; // Reset attempts on correct answer
+            skipBtn.style.display = 'none'; // Hide skip button
             currentIndex++;
             updateProgressBar();
         } else {
             feedback.textContent = 'Incorrect. Try again.';
             feedback.className = 'incorrect';
+            incorrectAttempts++;
+            if (incorrectAttempts >= 3) {
+                skipBtn.style.display = 'inline-block'; // Show skip button after 3 incorrect attempts
+            }
         }
 
         if (mode === 'hiraganaKatakanaWords' || mode === 'kanji') {
@@ -89,12 +102,34 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1500);
     }
 
+    function skipCard() {
+        const currentKey = currentKeys[currentIndex];
+        const correctAnswer = (mode === 'hiraganaKatakanaWords' || mode === 'kanji') ? currentData[currentKey].romaji : currentData[currentKey];
+        const currentMeaning = (mode === 'hiraganaKatakanaWords' || mode === 'kanji') ? currentData[currentKey].meaning : '';
+
+        feedback.textContent = `Skipped. Correct answer was: ${correctAnswer}`;
+        meaning.textContent = `Meaning: ${currentMeaning}`;
+        feedback.className = 'skipped';
+        incorrectAttempts = 0; // Reset attempts on skip
+        skipBtn.style.display = 'none'; // Hide skip button
+        currentIndex++;
+        updateProgressBar();
+        userInput.value = ''; // Clear input field
+
+        setTimeout(() => {
+            feedback.textContent = '';
+            meaning.textContent = '';
+            updateFlashcard();
+        }, 2000); // Longer delay for skipped cards to show answer
+    }
+
     submitBtn.addEventListener('click', checkAnswer);
     userInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             checkAnswer();
         }
     });
+    skipBtn.addEventListener('click', skipCard); // New: Skip button event listener
 
     hiraganaBtn.addEventListener('click', () => initialize('hiragana'));
     katakanaBtn.addEventListener('click', () => initialize('katakana'));
