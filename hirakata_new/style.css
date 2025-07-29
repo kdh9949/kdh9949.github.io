@@ -1,0 +1,25 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+#flashcard {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+#card-display {
+    font-size: 5rem;
+}
+
+#feedback.correct {
+    color: green;
+    font-weight: bold;
+}
+
+#feedback.incorrect {
+    color: red;
+    font-weight: bold;
+}
