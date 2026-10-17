@@ -33,6 +33,7 @@
     .actions p { margin: 0 0 20px; color: #53657a; }
     .button { display: inline-block; margin-top: auto; padding: 10px 18px; border-radius: 8px; background: #245fc5; color: #fff; font-weight: 700; text-decoration: none; }
     .button:hover { background: #194b9f; }
+    .button:disabled { border: 0; background: #718096; font: inherit; font-weight: 700; cursor: not-allowed; }
     a:focus-visible, summary:focus-visible { outline: 3px solid #d18400; outline-offset: 5px; }
     @media (max-width: 600px) {
       main { padding: 32px 16px; }
@@ -88,8 +89,8 @@
       </section>
       <section aria-labelledby="print-heading">
         <h2 id="print-heading">코드 출력 신청</h2>
-        <p>코드 프린트 됩니다. 다음 설문 링크로 제출해 주세요.<span class="note">Google 로그인이 필요할 수 있습니다. 이메일은 수집하지 않습니다.</span></p>
-        <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfrvd8zuR_YuWMroUjHK5I8tMOVqPR1kJK8CMEBFbv7UnwbpQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">코드 출력 설문 열기 ↗</a>
+        <p>프린트 안됨 죄송합니다</p>
+        <button class="button" type="button" disabled>코드 출력 설문 열기 ↗</button>
       </section>
     </div>
   </main>
